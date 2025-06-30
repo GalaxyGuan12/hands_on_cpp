@@ -476,9 +476,9 @@ void swapByPointer(int* a, int* b) {
 }
 
 void swapByReference(int& a, int& b) {
-    int temp = a;
-    a = b;
-    b = temp;
+    int temp = a;   // temp 存储 a 的值的副本
+    a = b;          // a 获得 b 的值
+    b = temp;       // b 获得原来 a 的值（通过 temp）
 }
 
 // 返回引用的函数
